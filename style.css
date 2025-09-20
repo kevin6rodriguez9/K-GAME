@@ -1,0 +1,303 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #0d0d0d;
+    color: #eaeaea;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: black;
+    border-bottom: 2px solid #1C9AEA;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #1C9AEA;
+}
+
+header .logo img {
+    width: 150px;
+    height: auto;
+    display: inline-block;
+}
+
+#menuHamburguesa {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #fff;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+header nav a {
+    color: #eaeaea;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: background 0.3s;
+    font-size: 20px;
+}
+
+header nav a:hover {
+    background: #1C9AEA;
+    color: black;
+}
+
+.eslogan {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("IMAGENES/FONDO-GAMER.webp") no-repeat center center/cover;
+    color: #fff;
+    padding: 0 20px;
+}
+
+.eslogan h1 {
+    font-size: clamp(1.8rem, 5vw, 3rem);
+    margin-bottom: 15px;
+    color: #1C9AEA;
+}
+
+.eslogan p {
+    max-width: 700px;
+    font-size: clamp(1rem, 3.5vw, 1.3rem);
+    margin-bottom: 25px;
+}
+
+.eslogan button {
+    background: #1C9AEA;
+    color: black;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.eslogan button:hover {
+    background: #0f7ac4;
+    transform: scale(1.05);
+}
+
+.section {
+    padding: 70px 40px;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #1C9AEA;
+}
+
+.noticias-contenedor,
+.categorias-contenedor {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.card,
+.noticia-principal {
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: left;
+    transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+}
+
+.card:hover,
+.noticia-principal:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    background: #222;
+}
+
+.card img,
+.noticia-principal img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.card h3,
+.noticia-principal h3 {
+    margin-bottom: 10px;
+    color: #1C9AEA;
+}
+
+.card p,
+.noticia-principal p {
+    margin-bottom: 10px;
+}
+
+.texto-extra {
+    display: none;
+    margin-top: 10px;
+    font-size: 0.95rem;
+    color: #ddd;
+}
+
+.leer-texto {
+    background: #1C9AEA;
+    color: black;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.leer-texto:hover {
+    background: #0f7ac4;
+    transform: scale(1.05);
+}
+
+.boton-comunidad {
+    background: #1C9AEA;
+    color: black;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    margin-top: 20px;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+}
+
+.boton-comunidad:hover {
+    background: #0f7ac4;
+    transform: scale(1.05);
+}
+
+.formulario {
+    background: #181818;
+    border: 2px solid #1C9AEA;
+    border-radius: 12px;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 24px 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.formulario input,
+.formulario textarea,
+.formulario button {
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    font-size: 1rem;
+}
+
+.formulario input,
+.formulario textarea {
+    background: #222;
+    color: #fff;
+}
+
+.formulario input:focus,
+.formulario textarea:focus {
+    outline: 2px solid #1C9AEA;
+}
+
+.formulario button {
+    background: #1C9AEA;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.formulario button:hover {
+    background: #0f7ac4;
+    transform: scale(1.05);
+}
+
+footer {
+    background: black;
+    color: #ddd;
+    padding: 50px 40px 20px;
+    border-top: 2px solid #1C9AEA;
+    text-align: center;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-wrap: wrap;
+        padding: 15px 20px;
+    }
+
+    #menuHamburguesa {
+        display: block;
+    }
+
+    header nav ul {
+        display: none;
+        flex-direction: column;
+        gap: 15px;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        width: 220px;
+        padding: 15px 0;
+        background: #222;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        z-index: 1000;
+        text-align: center;
+    }
+
+    header nav ul.activo {
+        display: flex;
+    }
+
+    .noticias-contenedor,
+    .categorias-contenedor {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .eslogan h1 {
+        font-size: 1.6rem;
+    }
+
+    .eslogan p {
+        font-size: 0.9rem;
+    }
+}

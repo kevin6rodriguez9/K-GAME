@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K-Game | Noticias Gamer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="IMAGENES/LOGO.webp" alt="LOGO">
+        </div>
+        <div id="menuHamburguesa">☰</div>
+        <nav>
+            <ul id="menuprincipal">
+                <li><a href="#hero">Inicio</a></li>
+                <li><a href="#noticias">Noticias</a></li>
+                <li><a href="#categorias">Categorías</a></li>
+                <li><a href="#comunidad">Comunidad</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="eslogan" class="eslogan">
+            <h1>Tu Mundo Gamer al Día</h1>
+            <p>Descubre noticias, reseñas y las últimas actualizaciones del universo de los videojuegos.
+                En K-Game creemos que jugar es más que entretenimiento: es explorar, competir y compartir.</p>
+            <button onclick="location.href='#noticias'">Ver Noticias</button>
+        </section>
+
+        <section id="noticias" class="section">
+            <h2>Últimas Noticias</h2>
+            <div class="noticias-contenedor">
+                <div class="noticia-principal">
+                    <img src="IMAGENES/FORTNITE.webp" alt="Noticia #1">
+                    <h3>Actualización de Fortnite</h3>
+                    <p>Epic Games lanza su nueva temporada con mapas renovados, skins exclusivas y eventos en vivo.</p>
+                    <p class="texto-extra">
+                        Además, nuevos modos de juego y recompensas exclusivas para los jugadores veteranos estarán
+                        disponibles. ¡No te lo pierdas!
+                    </p>
+                    <button class="leer-texto">Leer más</button>
+                </div>
+                <div class="card">
+                    <img src="IMAGENES/GTAVI.webp" alt="Noticia #2">
+                    <h3>GTA VI: lo que sabemos</h3>
+                    <p>Rockstar revela nuevos detalles del esperado título. Rumores apuntan a Vice City como mapa
+                        principal.
+                    </p>
+                    <p class="texto-extra">
+                        Se esperan vehículos clásicos, nuevos modos de juego online y mapas expandidos que sorprendan a
+                        los
+                        fans.
+                    </p>
+                    <button class="leer-texto">Leer más</button>
+                </div>
+                <div class="card">
+                    <img src="IMAGENES/LEAGUE-OF-LEGENDS.webp" alt="Noticia 3">
+                    <h3>League of Legends</h3>
+                    <p>Nuevo campeón llega a la grieta del invocador con mecánicas únicas que cambiarán el meta.</p>
+                    <p class="texto-extra">
+                        Además, Riot Games introduce cambios en los objetos y runas para equilibrar la experiencia
+                        competitiva.
+                    </p>
+                    <button class="leer-texto">Leer más</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="categorias" class="section">
+            <h2>Categorías de Juegos</h2>
+            <div class="categorias-contenedor">
+                <div class="card">
+                    <img src="IMAGENES/ACCION.webp" alt="Acción">
+                    <p>Combates, persecuciones y adrenalina al máximo. Ejemplos: Assassin’s Creed, DOOM.</p>
+                </div>
+                <div class="card">
+                    <img src="IMAGENES/AVENTURA.webp" alt="Aventura">
+                    <p>Explora mundos llenos de misterio y narrativa profunda. Ejemplos: The Legend of Zelda, Metroid.
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="IMAGENES/DEPORTE.webp" alt="Deportes">
+                    <p>Vive la emoción real del deporte en cada partida. Ejemplos: FIFA, NBA 2K, WWE 2K.</p>
+                </div>
+                <div class="card">
+                    <img src="IMAGENES/ESTRATEGIA.webp" alt="Estrategia">
+                    <p>Planificación, táctica y toma de decisiones inteligentes. Ejemplos: Civilization, Age of Empires,
+                        Frostpunk.</p>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="comunidad" class="section">
+            <h2>Comunidad Gamer</h2>
+            <p>Únete a nuestra comunidad para compartir experiencias, reseñas y tus momentos favoritos en el mundo
+                gamer.
+            </p> <br><br>
+            <a href="https://discord.gg/8pse9aYt" target="_blank" class="boton-comunidad">Unirme a la Comunidad</a>
+        </section>
+
+        <section id="contacto" class="section">
+            <h2>Contáctanos</h2>
+            <form class="formulario">
+                <input type="text" placeholder="Tu nombre" required>
+                <input type="email" placeholder="Tu correo" required>
+                <textarea placeholder="Escribe tu mensaje..." required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="pieDePagina-abajo">
+            <p>&copy; <span id="year"></span> K-Game - Todos los derechos reservados</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
